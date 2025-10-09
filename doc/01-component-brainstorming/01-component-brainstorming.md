@@ -1,13 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Shailly Kerkar
+- **Dot Number**: kerkar.1
+- **Due Date**: 09/19 @ 1:50 PM EST
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
-
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
 implement, but your component must fit within the constraints of our software
@@ -28,9 +25,6 @@ detailed feedback, which may help you decide which component to ultimately
 implement.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -51,9 +45,6 @@ to the tree diagram (you may remove this one as well):
 ```
 
 ## Assignment Learning Objectives
-
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,9 +57,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
-
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
 are meant to provide ongoing feedback in the learning process. Therefore,
@@ -105,24 +93,17 @@ Below is further rationale/explanation for the rubric items above:
 > hobbies. These will help you clarify your values before you start
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
-
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+>
+ I’ve always been someone who finds balance between creativity and technology. Outside of school, my biggest hobbies are reading and writing poetry. Writing, in particular, has been my way of making sense of the world, and one of my long-term dreams is to publish a poetry book one day—though I’d prefer to do it anonymously. I also enjoy sketching on and off, but unlike my other hobbies, that comes in phases. Reading and writing are constants for me, and they’ve shaped how I think and express myself.
+ On the professional side, I’m a Computer Science and Engineering major with a deep interest in AI. I want to use AI not just as a tool but as a way to solve meaningful problems. Having lived with Type 1 diabetes most of my life, I know firsthand how medical technology can both empower and frustrate people. Devices like insulin pumps are lifesaving, but they’re also imperfect. One of my long-term career goals is to improve or even redesign these systems—making them smarter, more accessible, and less intimidating, especially for children. I want to contribute to AI research that creates real social good, whether that’s in healthcare or beyond.
+ I want to build a life that balances responsibility with passion. Financial independence matters to me, not just to support myself but also to give back. At the same time, I want to chase personal passions like motorcycles and casual motorsports. I’m also really interested in research and problem-solving. I don’t picture myself in a typical 9–5 forever—I’d rather be part of a team working on discoveries that actually help people. What excites me is being at that intersection of creativity, technology, and making a real impact.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
-
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -131,9 +112,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
-
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
 mirror the formatting as close as possible in your designs. By following this
@@ -200,68 +178,97 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: PoetryCollection
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    The purpose of this component is to model a collection of poems, including drafts and finished pieces. The design focuses on organizing poems with titles, tags, and dates while allowing editing and retrieval. The intent is to support a writer in managing their creative work over time.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void addPoem(String title, String content)`: adds a new poem with a title and content.
+    - `String getPoem(String title)`: retrieves the content of a poem by title
+    - `void removePoem(String title)`: removes a poem by title.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `List<String> listTitles()`: lists all poem titles in the collection.
+    - `List<String> searchByTag(String tag)`: returns all poems that include a specific tag.
+    - `void updatePoem(String title, String newContent)`: updates the content of an existing poem.
+    - `String getLatestPoem()`: retrieves the most recently added poem.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, Poems will be added, edited, and removed.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Possibly since I want to add things like title, content, tags, and date to represent every poem?
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - A small set of constants for poem status (example `Draft`, `Final`, etc.)
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, for instance, `updatePoem` can be implemented by removing and re-adding a poem with the same title.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Reading List
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is to model the organization of a personal reading list. It supports books/articles that are “to-read,” “in progress,” or “completed,” with the ability to update status and store notes. The intent is to help readers manage and track their reading goals.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+  - `void addBook(String title, String author)`: adds a book with a given title and author.
+  - `void removeBook(String title)`: removes a book by title.
+  - `String getBook(String title)`: retrieves book details.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void updateStatus(String title, String status)`: changes a book’s status (example `To_Read`, `In_Progress`, `Completed`).
+    - `List<String> listByStatus(String status)`: lists all books under a specific status.
+    - `void addNotes(String title, String notes)`: attaches personal notes to a book.
+    - `List<String> recommendNextReads()`: suggests books based on unfinished items or certain genres (optional feature).
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, books will be added, updates, and removed.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - A book record with fields such as title, authot, status, notes, maybe even genres.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Most probably yes, for reading statuses (To_read, In_Progress, Completed etc.)
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yep, `updateStatus` relies on retrieving a book first using `getBook`.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: Watermelon Sugar High! (sorry, I meant GlucoseLog)
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is to track and store blood glucose levels over time. Each entry includes date, time, and value, along with optional notes such as meal or exercise context. The intent is to provide a structured way for people with diabetes to log and review their glucose patterns.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void addEntry(int value, String date, String time)`: adds a glucose measurement with date and time.
+    - `int getEntry(String date, String time)`: retrieves a glucose measurement for a specific timestamp.
+    - `void removeEntry(String date, String time)`: removes a glucose measurement.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `double averageGlucose(String date)`: calculates the average glucose for a given day.
+    - `List<Integer> getRange(String startDate, String endDate)`: retrieves glucose values within a date range.
+    - `String flagHighLow(int thresholdHigh, int thresholdLow)`: reports if any values fall outside safe ranges.
+    - `int getLatestReading()`: retrieves the most recent glucose value.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. Data entries of glucose levels will be constantly added and removed.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Uhh yes, to represent a log entry with tags/fields such as value, date, time, additonal notes.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Constants for high/low glucose thresholds.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yessss. `averageGlucose` is implemented by retrieving all entries with getEntry and calculating a mean.
+
+
+  > I also had these ideas which I wanted to submit incase any interested you.
+
+  #1 MealPlanner : models the creation of meal plans with nutritional data (carbs, proteins, calories) to support dietary goals.
+  Note: I thought this was a litle complicated because I'd have to include all kinds of nutritional info? Which would be frustrating to dooo but let's see.
+
+  #2 Sketchbook : stores sketches with attributes like title, medium, and date for personal tracking.
+  Note: really cute. I thought of this while cleaning out my shelf and I found my sketchbook. I think this would be sure fun for people who do digital art but not limited to them.
+
+  #3 Garage: models the customization and maintenance of motorcycles (almost like a game with parts and upgrades)
+  Note: very random, more like a game but also super fun??
+
+  #4 FinancialGoalTracker : tracks saving targets, expenses, and investments.
 
 ## Post-Assignment
 
@@ -308,9 +315,6 @@ designs, so we can gauge your progress. Please keep it updated at each stage
 of development.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be

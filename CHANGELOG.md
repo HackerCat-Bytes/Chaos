@@ -8,6 +8,19 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.09.19]
+
+### Added
+
+- Designed a PoetryCollection component
+- Designed a ReadingList component
+- Designed a GlucoseLog component
+- Added answers with respect to the Comments in the documents
+- Added another section below the Components Drafts to include more ideas
+
+### Removed
+- Removed certain comments after responding to them
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project
