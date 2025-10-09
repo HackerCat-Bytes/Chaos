@@ -8,10 +8,22 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.10.09]
+
+### Added
+- Created a proof-of-concept for the **PoetryCollection** component
+- Added `removeAny()` kernel method to support iteration and listing titles
+- Implemented and tested kernel methods: `addPoem`, `getPoem`, `removePoem`
+- Implemented secondary methods: `updatePoem`, `listTitles`, and `getLatestPoem`
+- Wrote a `main` demo that adds, updates, removes, and lists poems (with new poems *Crave*, *Heavens*, and *Brown Eyes*)
+
+### Updated
+- Refined poem examples and output messages for a more cohesive demo
+- Cleaned up code formatting and comments
+
 ## [2025.09.19]
 
 ### Added
-
 - Designed a PoetryCollection component
 - Designed a ReadingList component
 - Designed a GlucoseLog component
