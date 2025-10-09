@@ -1,12 +1,10 @@
 # Portfolio Part 2: Component Proof-of-Concept
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Shailly Kerkar
+- **Dot Number**: kerkar.1
+- **Due Date**: 10/09 @ 1:50 PM
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 Previously, you brainstormed three ideas, and hopefully you got some feedback as
 well. However, it's impossible to know how reasonable your design actually is
@@ -52,8 +50,6 @@ to the tree diagram (you may remove this one as well):
 ```
 
 ## Assignment Learning Objectives
-
-<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -114,8 +110,23 @@ Below is further rationale/explanation for the rubric items above:
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
-<!-- TODO: briefly argue your choice of design or design something
-new; then delete this comment -->
+Out of all my designs, I decided to go with PoetryCollection because it feels
+like the most realistic one to build right now — and honestly, it’s the one
+that feels most “me.” It connects to my creative side while still letting me
+practice the structure of an OSU-style component.
+
+When I got feedback on my brainstorming assignment, Jeremy mentioned that I’d
+need a removeAny() method so I could loop through the poems (for example, to
+list all the titles). That totally made sense and was easy to add. Compared to
+my GlucoseLog idea — which would have needed a lot of work to handle maps and
+repeated timestamps — this one is way cleaner to test out.
+
+From a technical point of view, PoetryCollection is also flexible and simple to
+represent in Java. I can use something like a Map<String, String> to match poem
+titles with their content, then layer on a few secondary methods like listing
+titles or updating poems. It’s a creative concept, but it’s also achievable for
+this stage of the project — which is exactly what I need for a solid
+proof-of-concept.
 
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my
@@ -125,8 +136,6 @@ new; then delete this comment -->
 > VSCode to run git commands. It's entirely up to you. Regardless of your choice,
 > we'll want a branch that you can later make a pull request from with all
 > your changes.
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -152,8 +161,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -188,8 +195,6 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
 request of all your changes. Pull requests are pretty easy to make if you're
@@ -211,7 +216,6 @@ to look over your changes. Otherwise, you defer needed changes to later pull
 requests, which could sacrifice the overall quality of your work or result in
 major rework.
 
-<!-- TODO: paste the URL to Carmen then delete this comment -->
 
 ### Peer Review
 
@@ -241,8 +245,6 @@ table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [pottery-fails]: https://www.youtube.com/shorts/Kqb9l113F_0?feature=share
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
