@@ -8,6 +8,16 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.10.26]
+### Added
+- Designed kernel and enhanced interfaces for **PoetryCollection** component
+- Added `hasPoem(String title)` based on instructor feedback to ensure proper preconditions for `getPoem` and `removePoem`
+- Documented all methods by referencing to OSU CSE components (`@requires`, `@ensures`, `@updates`)
+- Created hierarchy diagram to illustrate component structure
+
+### Updated
+- Adjusted proof-of-concept methods a little
+
 ## [2025.10.09]
 
 ### Added
