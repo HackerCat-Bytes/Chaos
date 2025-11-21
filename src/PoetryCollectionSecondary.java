@@ -3,7 +3,7 @@ import java.util.Map;
 public abstract class PoetryCollectionSecondary implements PoetryCollection {
 
     /**
-     * Default constructor.
+     * Default constructor for PoetryCollectionSecondary
      */
     public PoetryCollectionSecondary() {
         super();
