@@ -8,6 +8,13 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.11.06]
+
+### Added
+- Implemented `PoetryCollection1L` kernel implementation using `HashMap<String,String>` as representation.
+- Added methods: addPoem, hasPoem, getPoem, removePoem, removeAny, size.
+- Implemented Standard methods: newInstance, clear, transferFrom.
+
 ## [2025.10.09]
 
 ### Added
