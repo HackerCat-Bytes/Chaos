@@ -8,6 +8,15 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.11.06]
+
+### Added
+- Added tests for PoetryCollection
+- Added two use-case demos: DisplayLatestPoem and PoetryMixer
+
+### Updates
+- Polished comments, docs, edited file placements in the directory
+
 ## [2025.10.09]
 
 ### Added
